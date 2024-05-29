@@ -25,7 +25,7 @@ const Contact = () => {
         </div>
         <div className="right w-full lg:w-1/2 px-10 lg:pr-10 mb-20 lg:mb-0">
           <form action="">
-            <div className="inputGroup w-full flex items-center space-x-5">
+            <div className="inputGroup w-full flex items-center space-x-5 ">
               <input
                 type="text"
                 name="name"

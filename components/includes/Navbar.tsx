@@ -29,16 +29,16 @@ const Navbar = () => {
     setMenuOpen(false); // Optional: Close the menu when a link is clicked
   };
   return (
-    <nav className="flex items-center justify-between px-8 md:px-16 py-5 md:py-8 fixed top-0 left-0 w-full z-50 bg-gray-100/20 backdrop-blur">
+    <nav className="flex items-center justify-between px-8 md:px-16 py-5 md:py-8 fixed top-0 left-0 w-full z-50 bg-gray-400/20 backdrop-blur">
       <div className="left">
         <Link href="/">
           <Image src="/logo.png" alt="logo" width={60} height={60} />
         </Link>
       </div>
       <div className="middle items-center justify-center hidden md:block">
-        <ul className="flex items-center">
+        <ul className="flex items-center space-x-10">
           {NAV_LINKS.map((link) => (
-            <li key={link.key} className="text-white font-normal ml-7 text-lg">
+            <li key={link.key} className="text-white font-normal text-lg">
               <Link href={link.href}>{link.label}</Link>
             </li>
           ))}

@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="heroSection px-8 md:px-16 pt-20 py-8 md:py-8 md:pt-32">
+      className="heroSection px-8 md:px-16 pt-20 py-8 md:py-8 md:pt-36">
       <div className="left">
         <h1 className=" font-semibold text-center md:text-left text-white mb-10 text-5xl sm:text-6xl md:text-7xl">
           Never

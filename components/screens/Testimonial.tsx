@@ -15,6 +15,9 @@ const Testimonial = () => {
     slidesToShow: 3,
     slidesToScroll: 2,
     adaptiveHeight: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    pauseOnHover: true,
     responsive: [
       {
         breakpoint: 600,

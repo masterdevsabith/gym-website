@@ -10,20 +10,20 @@ interface ReviewProps {
 }
 
 const Review = ({ name, comment, image }: ReviewProps) => {
-  const [showFullComment, setShowFullComment] = useState(false);
+  // const [showFullComment, setShowFullComment] = useState(false);
 
-  const toggleComment = () => {
-    setShowFullComment(!showFullComment);
-  };
+  // const toggleComment = () => {
+  //   setShowFullComment(!showFullComment);
+  // };
 
-  const truncatedComment = (comment: string, maxLength: number) => {
-    if (comment.split(" ").length > maxLength) {
-      return comment.split(" ").splice(0, maxLength).join(" ") + "...";
-    }
-    return comment;
-  };
+  // const truncatedComment = (comment: string, maxLength: number) => {
+  //   if (comment.split(" ").length > maxLength) {
+  //     return comment.split(" ").splice(0, maxLength).join(" ") + "...";
+  //   }
+  //   return comment;
+  // };
   return (
-    <div className="bg-white p-6 rounded-lg shadow-md mr-3 flex flex-col items-center">
+    <div className="bg-white p-6 py-10 rounded-lg shadow-md mr-3 flex flex-col items-center">
       <Image
         src={image}
         alt="customer_image"
@@ -33,10 +33,11 @@ const Review = ({ name, comment, image }: ReviewProps) => {
       />
       <h2 className="text-xl font-bold mb-1">{name}</h2>
       <p className="text-gray-600">
-        {showFullComment ? comment : truncatedComment(comment, 14)}
+        {/* {showFullComment ? comment : truncatedComment(comment, 14)}
         <span className="text-blue-500 cursor-pointer" onClick={toggleComment}>
           {showFullComment ? " Show less" : " show more"}
-        </span>
+        </span> */}
+        {comment}
       </p>
     </div>
   );
